@@ -1,7 +1,13 @@
 class Triangle
-  attr_accessor :equilateral, :isosceles, :scalene
+  attr_accessor :length, :width, :height
 
-  def initialize(equilateral:, isosceles:, scalene:)
+  def initialize(length:, width:, height:)
+    @length = length
+    @width = width
+    @height = height
+  end
+
+  def kind
 
   end
 
