@@ -15,7 +15,7 @@ class Triangle
     elsif length != width && length != height
       :scalene
     elsif length < 0 || width < 0 || height < 0
-      self.TriangleError
+      raise TriangleError
     end
 
   end
