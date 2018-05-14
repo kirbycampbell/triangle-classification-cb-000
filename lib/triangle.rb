@@ -8,7 +8,7 @@ class Triangle
   end
 
   def kind
-    equilateral if length == width && length == height
+    :equilateral if length == width && length == height
   end
 
   class TriangleError < StandardError
