@@ -12,7 +12,10 @@ class Triangle
       :equilateral
     elsif length == width || length == height || width == height
       :isosceles
+    elsif length != width && length != height
+      :scalene
     end
+
   end
 
   class TriangleError < StandardError
