@@ -8,8 +8,11 @@ class Triangle
   end
 
   def kind
-    :equilateral if length == width && length == height
-    :isosceles if length == width || length == height || width == height
+    if length == width && length == height
+      :equilateral
+    elsif length == width || length == height || width == height
+      :isosceles
+    end
   end
 
   class TriangleError < StandardError
